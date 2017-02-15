@@ -1,1 +1,242 @@
-<h1> Hello World! </h1>
+
+	<div class="logo">
+		<a href="index.html"><h1>Luxury Watches</h1></a>
+	</div>
+	<!--start-logo-->
+	<!--bottom-header-->
+	<div class="header-bottom">
+		<div class="container">
+			<div class="header">
+				<div class="col-md-9 header-left">
+				<div class="top-nav">
+					<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
+						<li class="grid"><a href="#">Men</a>
+
+						</li>
+						<li class="grid"><a href="#">Women</a>
+
+						</li>
+						<li class="grid"><a href="#">Kids</a>
+							
+						</li>
+						<li class="grid"><a href="typo.html">Blog</a>
+						</li>
+						<li class="grid"><a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-3 header-right">
+				<div class="search-bar">
+					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+					<input type="submit" value="">
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--bottom-header-->
+	<!--banner-starts-->
+	<div class="bnr" id="home">
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider4">
+			    <li>
+          <%=image_tag("bnr-1.jpg")%>
+
+				</li>
+				<li>
+          <%=image_tag("bnr-2.jpg")%>
+
+				</li>
+				<li>
+          <%=image_tag("bnr-3.jpg")%>
+
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--banner-ends-->
+	<!--Slider-Starts-Here-->
+
+				<%= javascript_include_tag "responsiveslides.min"%>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--about-starts-->
+	<div class="about">
+		<div class="container">
+			<div class="about-top grid-1">
+				<div class="col-md-4 about-left">
+					<figure class="effect-bubba">
+            <%=image_tag("abt-1.jpg")%>
+
+						<figcaption>
+							<h2>Nulla maximus nunc</h2>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 about-left">
+					<figure class="effect-bubba">
+            <%=image_tag("abt-2.jpg")%>
+
+						<figcaption>
+							<h4>Mauris erat augue</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 about-left">
+					<figure class="effect-bubba">
+            <%=image_tag("abt-3.jpg")%>
+
+						<figcaption>
+							<h4>Cras elit mauris</h4>
+							<p>In sit amet sapien eros Integer dolore magna aliqua</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--about-end-->
+	<!--product-starts-->
+	<div class="product">
+		<div class="container">
+			<div class="product-top">
+				<div class="product-one">
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-1.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-2.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-3.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-4.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="product-one">
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-5.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-6.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-7.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-left">
+						<div class="product-main simpleCart_shelfItem">
+							<a href="single.html" class="mask"><%=image_tag("p-8.png",class:"img-responsive zoom-img")%></a>
+							<div class="product-bottom">
+								<h3>Smart Watches</h3>
+								<p>Explore Now</p>
+								<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+							</div>
+							<div class="srch">
+								<span>-50%</span>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--product-end-->

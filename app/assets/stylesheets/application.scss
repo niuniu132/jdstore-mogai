@@ -17,3 +17,65 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ @font-face {
+     font-family: 'Lora-Regular';
+     src:font-url('Lora-Regular.ttf') format('truetype');
+ }
+ @font-face {
+     font-family: 'Muli-Regular';
+     src:font-url('Muli-Regular.ttf') format('truetype');
+ }
+ @font-face {
+     font-family: 'Lato-Regular';
+     src:font-url('Lato-Regular.ttf') format('truetype');
+ }
+ @font-face {
+     font-family: 'BreeSerif-Regular';
+     src:font-url('BreeSerif-Regular.ttf') format('truetype');
+ }
+
+
+ .navbar-default {
+     background-color: #212121;//背景颜色
+     border-color: #212121;//边框色
+     margin-bottom: 0;//底部 margin 不撑开距离
+ }
+
+ .navbar-header .navbar-brand {
+   font-size: 35px;
+   font-family: 'Lora-Regular';
+   color: #FAFAFA;//字体颜色
+}
+
+ .navbar-default .navbar-nav >li >a{
+    font-size: 18px;
+    font-family: 'Lora-Regular';
+    color: #FAFAFA;//字体颜色
+ }
+
+.navbar-default .navbar-nav >li >a:hover,
+.navbar-default .navbar-nav >li >a:focus {
+   color: #90A4AE;//字体颜色
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;//圆角为0
+    }
+}
+
+#slider4{
+  margin-left:  -15px ;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin-right:  -30px ;
+  border-radius: 0;
+}
+
+.rslides img {
+  height: auto;
+  display: block;
+  float: middle;
+  width: 100%;
+  border: 0;
+
+}
