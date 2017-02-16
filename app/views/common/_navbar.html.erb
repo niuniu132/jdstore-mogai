@@ -36,8 +36,8 @@
                           </li>
                         <% end %>
                           <li><%= link_to('check order', account_orders_path)%></li>
-                          <!-- <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li> -->
-                          <li> <%= link_to(content_tag(:i, 'log out', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
+                        
+                          <li> <%= link_to('log out', destroy_user_session_path, method: :delete) %> </li>
                       </ul>
                     </li>
                 <% end %>
