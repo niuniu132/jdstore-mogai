@@ -35,45 +35,184 @@
      src:font-url('BreeSerif-Regular.ttf') format('truetype');
  }
 
+  .information  li{
+      list-style: none;
+      display: block;
+      margin-top: 10px;
+  }
 
- .navbar-default {
-     background-color: #212121;//背景颜色
-     border-color: #212121;//边框色
-     margin-bottom: 0;//底部 margin 不撑开距离
- }
+ .navbar {
+       font-family: Montserrat, sans-serif;
 
- .navbar-header .navbar-brand {
-   font-size: 35px;
-   font-family: 'Lora-Regular';
-   color: #FAFAFA;//字体颜色
+       background-color: #212121;
+       border: 0;
+       border-radius: 0;
+       font-size: 12px ;
+       letter-spacing: 4px;
+       opacity: 0.9;
+
+   }
+
+.navbar .navbar-header a {
+    color:#F5F5F5;
+    font-size: 20px
 }
 
- .navbar-default .navbar-nav >li >a{
-    font-size: 18px;
+.navbar .navbar-nav li>a{
+    color:#F5F5F5;
     font-family: 'Lora-Regular';
-    color: #FAFAFA;//字体颜色
- }
-
-.navbar-default .navbar-nav >li >a:hover,
-.navbar-default .navbar-nav >li >a:focus {
-   color: #90A4AE;//字体颜色
 }
 
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0;//圆角为0
-    }
+.logo h1{
+    font-family: 'Lora-Regular';
+    text-align: center;
+    color:#212121;
+    margin-top:70px;
+    margin-bottom: -5px;
+
 }
 
 
 
-.rslides img {
-  margin:0;
-  padding: 0;
-  height: auto;
-  display: block;
-  float: middle;
-  width: 100%;
-  border: 0;
-
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #D7CCC8;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+.link-header{
+    height: 25px;
+}
+
+.link-header .link-group ul{
+  float:left;
+  margin-left: 15px;
+}
+
+.link-header .link-group ul>a{
+    color:#212121;
+    font-size: 15px;
+    font-family: 'Muli-Regular';
+}
+
+.link-header .link-group ul>a:hover,
+.link-header .link-group ul>a:focus{
+    color:#00BCD4;
+    text-decoration: none;
+}
+
+.link-header .search-input{
+    border:none;
+}
+
+.link-header .search-button{
+    border:none;
+    background-color: #F5F5F5;
+}
+
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 400px;
+    margin-bottom: 30px;
+    margin-top:10px;
+
+  }
+
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 400px;
+
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 400px;
+  }
+
+  .carousel-caption {
+    z-index: 10;
+  }
+
+  .carousel-control.left .glyphicon {  //carousel 调整箭头高度，数值越大越靠下
+    margin-top: 70px;
+
+  }
+
+  .carousel-control.right .glyphicon {
+    margin-top: 70px;
+
+  }
+
+  .carousel-control.left, .carousel-control.right {
+
+  }
+
+  .carousel-control{    //调整控制箭头距离左右边界宽度
+      width:3%;
+  }
+
+
+// footer
+  .display3{
+      margin-bottom: 60px;
+  }
+
+  .infor-left a, .infor-left p{
+      font-family: 'Lato-Regular';
+      font-size: 13px;
+      color: #999;
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.1;
+
+  }
+
+  .infor-left a:hover,
+  .infor-left a:focus,
+  .infor-left li a:hover,
+  .infor-left li a:focus{
+      text-decoration:none;
+  }
+
+  .infor-left a:hover,
+  .infor-left a:focus,
+  .infor-left li a p:hover,
+  .infor-left li a p:focus{
+      color:#00BCD4;
+  }
+
+  .infor-left h3{
+        font-family: 'BreeSerif-Regular';
+        margin-left:40px;
+        margin-bottom: 30px;
+  }
+
+  .infor-left  img {
+      display: inline-block;	//图片和链接文字显示在同一行
+      margin-right: 10px; //图片和链接文字拉开一点距离
+      width: 30px; //定制图片宽度
+      height: 30px; //定制图片高度
+  }
+
+  .copyright {
+      display: inline-block;
+  }
+  .copyright .input-group{
+      width:40%;
+      margin-bottom: 20px;
+      margin-left: 60px;
+      margin-top:10px;
+  }
+
+  .copyright .footer-right p{
+     margin-top: 18px;
+  }

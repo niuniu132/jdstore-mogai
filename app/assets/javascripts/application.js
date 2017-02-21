@@ -16,3 +16,7 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require_tree .
+
+$('.carousel').carousel({
+	interval: 20000
+})

@@ -1,13 +1,12 @@
-<footer class="container">
+<footer>
   <div class="information">
-    <div class="container">
-      <div class="infor-top">
+      <div class="infor-header">
         <div class="col-md-3 infor-left">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="#"><span class="fb"></span><h6>Facebook</h6></a></li>
-            <li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
-            <li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>
+            <li><a href="#"><%= image_tag('fb.png')%>Facebook</a></li>
+            <li><a href="#"><%= image_tag('twitter.png')%>Twitter</a></li>
+            <li><a href="#"><%= image_tag('google.png')%>Google+</a></li>
           </ul>
         </div>
         <div class="col-md-3 infor-left">
@@ -16,14 +15,14 @@
             <li><a href="#"><p>Specials</p></a></li>
             <li><a href="#"><p>New Products</p></a></li>
             <li><a href="#"><p>Our Stores</p></a></li>
-            <li><a href="contact.html"><p>Contact Us</p></a></li>
+            <li><a href="#"><p>Contact Us</p></a></li>
             <li><a href="#"><p>Top Sellers</p></a></li>
           </ul>
         </div>
         <div class="col-md-3 infor-left">
           <h3>My Account</h3>
           <ul>
-            <li><a href="account.html"><p>My Account</p></a></li>
+            <li><a href="#"><p>My Account</p></a></li>
             <li><a href="#"><p>My Credit slips</p></a></li>
             <li><a href="#"><p>My Merchandise returns</p></a></li>
             <li><a href="#"><p>My Personal info</p></a></li>
@@ -31,32 +30,37 @@
           </ul>
         </div>
         <div class="col-md-3 infor-left">
-          <h3>Store Information</h3>
-          <h4>The company name,
-            <span>Lorem ipsum dolor,</span>
-            Glasglow Dr 40 Fe 72.</h4>
-          <h5>+955 123 4567</h5>
-          <p><a href="mailto:example@email.com">contact@example.com</a></p>
+          <h3>Company</h3>
+          <ul>
+            <li><p>Twatch.com</p></li>
+            <li><p>393 DongLing Street, Beijing</p></li>
+            <li><p>010 123 326 999</p></li>
+            <li><p>info@twatch.com</p></li>
+
+          </ul>
         </div>
         <div class="clearfix"></div>
       </div>
     </div>
-  </div>
   <!--information-end-->
   <!--footer-starts-->
-  <div class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="col-md-6 footer-left">
+
+  <div class="line"></div>
+
+    <div class="copyright">
+        <div class="col-md-8 footer-left">
           <form>
-            <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-            <input type="submit" value="Subscribe">
+            <div class="input-group">
+              <input type="email" class="form-control" size="30" placeholder="Enter Your Email" required>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default">Subscribe</button>
+              </div>
+            </div>
           </form>
         </div>
-        <div class="col-md-6 footer-right">
+        <div class="col-md-4 footer-right">
           <p>Copyright ©2017 Twatch  Design by liao&liu </p>
         </div>
         <div class="clearfix"></div>
-      </div>
     </div>
-  </div>
+</footer>
