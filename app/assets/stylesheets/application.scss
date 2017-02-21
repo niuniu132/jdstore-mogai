@@ -38,6 +38,11 @@
 
 
   //navbar
+    .nav-top1 .navbar-header a:hover,
+    .nav-top1 .navbar-header a:focus{
+        color:#00BCD4;
+    }
+
     .navbar-nav .dropdown-menu{
       background-color: #4E342E;
     }
@@ -74,7 +79,7 @@
 
 .navbar .navbar-nav li>a:hover,
 .navbar .navbar-nav li>a:focus{
-    color:#42A5F5;
+    color:#00BCD4;
 
 }
 
@@ -125,7 +130,7 @@
 
 .link-header .search-button{
     border:none;
-    background-color: #F5F5F5;
+    background-color: white;
 }
 
 
@@ -260,5 +265,14 @@
 
   .product-each{
       margin-top:40px;
-
   }
+
+  .product-each img:hover,
+  .product-each img:focus{
+      opacity: 0.7;
+  }
+
+  .product-each li:hover,
+  .product-each li:focus{
+      color:#00BCD4;
+}
