@@ -35,15 +35,23 @@
      src:font-url('BreeSerif-Regular.ttf') format('truetype');
  }
 
-  .information  li{
-      list-style: none;
-      display: block;
-      margin-top: 10px;
-  }
 
+
+  //navbar
+    .navbar-nav .dropdown-menu{
+      background-color: #4E342E;
+    }
+
+    .navbar-nav .dropdown-menu a{
+      font-size: 12px;
+    }
+
+    #nav-spacer1{
+      margin:60px;
+    }
  .navbar {
        font-family: Montserrat, sans-serif;
-
+       height: 8%;
        background-color: #212121;
        border: 0;
        border-radius: 0;
@@ -61,7 +69,15 @@
 .navbar .navbar-nav li>a{
     color:#F5F5F5;
     font-family: 'Lora-Regular';
+    margin-right: 10px;
 }
+
+.navbar .navbar-nav li>a:hover,
+.navbar .navbar-nav li>a:focus{
+    color:#42A5F5;
+
+}
+
 
 .logo h1{
     font-family: 'Lora-Regular';
@@ -118,24 +134,26 @@
 
   /* Carousel base class */
   .carousel {
-    height: 400px;
+    height: auto;
     margin-bottom: 30px;
     margin-top:10px;
+    width:100%
 
   }
 
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 400px;
+    height: auto;
 
   }
+
   .carousel-inner > .item > img {
-    position: absolute;
+
     top: 0;
     left: 0;
-    min-width: 100%;
-    height: 400px;
+    width: 100%;
+    height: auto;
   }
 
   .carousel-caption {
@@ -162,6 +180,12 @@
 
 
 // footer
+.information  li{
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+}
+
   .display3{
       margin-bottom: 60px;
   }
@@ -215,4 +239,26 @@
 
   .copyright .footer-right p{
      margin-top: 18px;
+  }
+
+
+
+
+
+//product
+
+  .products li{
+      list-style: none;
+      font-family: 'BreeSerif-Regular';
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.1;
+      text-align: center;
+      margin-top: 10px;
+
+  }
+
+  .product-each{
+      margin-top:40px;
+
   }
