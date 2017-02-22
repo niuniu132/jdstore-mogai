@@ -13,8 +13,11 @@
                  <% end %>
                </li>
                 <% if !current_user %>
-                    <li><%= link_to("Sighup", new_user_registration_path) %> </li>
-                    <li><%= link_to("Login", new_user_session_path) %> </li>
+                    <li><%= link_to("Signup".html_safe, "#signupModal", 'data-toggle' => "modal") %></li>
+                    <li><%= link_to("Login".html_safe, "#loginModal", 'data-toggle' => "modal") %></li>
+
+                    <!-- <li><%= link_to("Sighup", new_user_registration_path) %> </li> -->
+                    <!-- <li><%= link_to("Login", new_user_session_path) %> </li> -->
                     <!-- <li><%= link_to("sigh in", new_user_session_path) %></li> -->
                     <!-- <li><%= link_to(content_tag(:i, 'sign in', class: 'fa fa-sign-in'), new_user_session_path) %></li> -->
                 <% else %>
@@ -31,7 +34,7 @@
                         <% end %>
                           <li><%= link_to('check order', account_orders_path)%></li>
 
-                          <li> <%= link_to('log out', destroy_user_session_path, method: :delete) %> </li>
+                          <li> <%= link_to('logout', destroy_user_session_path, method: :delete) %> </li>
                       </ul>
                     </li>
                 <% end %>
@@ -42,3 +45,5 @@
 
 </nav>
 <div id='nav-spacer1'></div>
+<%= render "common/signup" %>
+<%= render "common/login" %>
