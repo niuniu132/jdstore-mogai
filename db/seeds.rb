@@ -15,6 +15,6 @@ u.save
 create_product = for i in 1..12 do
 
   Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: "#{i}".to_i * 10000 ,
-    image:Rails.root.join("app/assets/images/w#{i}.jpg").open])
+    image:Rails.root.join("app/assets/images/#{i}.jpg").open])
 
 end
