@@ -56,7 +56,7 @@
     }
  .navbar {
        font-family: Montserrat, sans-serif;
-       height: 8%;
+       height: 1cm;
        background-color: #212121;
        border: 0;
        border-radius: 0;
@@ -103,8 +103,10 @@
     margin-top: 20px;
 }
 
+// home line search
 .link-header{
-    height: 25px;
+    height: 1cm;
+    margin-bottom: -10px;
 }
 
 .link-header .link-group ul{
@@ -133,9 +135,11 @@
     background-color: white;
 }
 
+.link-header .search{
+    position: absolute;
+    right:20%;
+}
 
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
 
   /* Carousel base class */
   .carousel {
@@ -146,49 +150,35 @@
 
   }
 
-
-  /* Declare heights because of positioning of img element */
   .carousel .item {
     height: auto;
-
   }
 
   .carousel-inner > .item > img {
-
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
   }
 
-  .carousel-caption {
-    z-index: 10;
-  }
-
-  .carousel-control.left .glyphicon {  //carousel 调整箭头高度，数值越大越靠下
-    margin-top: 70px;
-
-  }
-
-  .carousel-control.right .glyphicon {
-    margin-top: 70px;
-
-  }
-
-  .carousel-control.left, .carousel-control.right {
-
-  }
-
-  .carousel-control{    //调整控制箭头距离左右边界宽度
-      width:3%;
-  }
 
 
 // footer
+
+.footer1{
+  margin-top:1cm;
+}
+
+.information{
+    width:90%;
+    margin:0 auto;
+}
+
 .information  li{
     list-style: none;
     display: block;
     margin-top: 10px;
+
 }
 
   .display3{
@@ -244,6 +234,8 @@
 
   .copyright .footer-right p{
      margin-top: 18px;
+     right: 10%;
+     position: absolute;
   }
 
 
@@ -276,3 +268,27 @@
   .product-each li:focus{
       color:#00BCD4;
 }
+
+
+//modal
+
+   .modal-header{
+     font-size: 90px;
+     color:white;
+     height: 2.5cm;
+     text-align: center;
+     background-color: #546E7A;
+  }
+
+  .modal-dialog {
+    width:10cm;
+    position: relative;
+    left:25%;
+    margin: 10px;
+}
+
+  .modal .btn{
+      width:4cm;
+      background-color:#546E7A;
+      color:white;
+  }
