@@ -13,10 +13,28 @@ u.is_admin = true
 u.save
 
 
-create_product = for i in 1..12 do
 
-  Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: "#{i}".to_i * 10000 ,
-    image:"#{Rails.root}/app/assets/images/w#{i}.jpg"])
-
-
-end
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w1.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w2.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w3.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w4.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w5.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w6.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w7.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w8.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w9.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w10.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w11.jpg")])
+Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: 100000 ,
+  image:open("#{Rails.root}/app/assets/images/w12.jpg")])
