@@ -11,3 +11,12 @@ u.password = "111111"                # 最少要六码
 u.password_confirmation = "111111"   # 最少要六码
 u.is_admin = true
 u.save
+
+
+create_product = for i in 1..12 do
+
+  Product.create!([title:'New watch' , description: "Nice watch", quantity: "5",price: "#{i}".to_i * 10000 ,
+    image:"#{Rails.root}/app/assets/images/w#{i}.jpg"])
+
+
+end
